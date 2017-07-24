@@ -128,7 +128,8 @@ var templates = bemxjst.bemhtml.compile(function() {
         // Setting up BEM naming
         naming: {
             elem: '__',
-            mod: '_'
+            mod: '_',
+            modVal: '--'
         }
     });
 
@@ -147,7 +148,7 @@ var html = templates.apply(bemjson);
 The resulting `html` contains the string:
 
 ```html
-<div class="page page_theme_gray"><div class="page__head page__head_type_short"></div></div>
+<div class="page page_theme--gray"><div class="page__head page__head_type--short"></div></div>
 ```
 
 You can find more information in [naming conventions](https://en.bem.info/methodology/naming-convention/) article.
